@@ -1,0 +1,6 @@
+syntax:glob
+
+.netrwhist
+.DS_Store
+_viminfo
+*.orig
