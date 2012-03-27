@@ -7,6 +7,8 @@ syntax enable                     " Turn on syntax highlighting.
 " Add recently accessed projects menu (project plugin)
 set viminfo^=!
 
+" Sets pallete to 256 colors
+set t_Co=256
 " Set default color scheme 
 colo vividchalk
 set nobackup                      " Don't make a backup before overwriting a file.
