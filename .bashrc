@@ -191,4 +191,6 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 alias g='vim --remote-silent'
 # Make VIM default editor
-export EDITOR='~/bin/vim'
+export EDITOR='vim'
+
+. $HOME/.bashrc.load
