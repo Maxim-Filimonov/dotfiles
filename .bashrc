@@ -190,6 +190,8 @@
 # alias cd=cd_func
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 alias g='vim --remote-silent'
+# Use tmux in 256 colors mode everytime
+alias tmux="tmux -2"
 # Make VIM default editor
 export EDITOR='vim'
 
