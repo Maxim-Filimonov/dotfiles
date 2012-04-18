@@ -13,7 +13,8 @@ set t_Co=256
 colo vividchalk
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
-set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
+set backupdir=.,./.backup,/tmp
+set directory=./.backup,.,/tmp
 
 
 set showcmd                       " Display incomplete commands.

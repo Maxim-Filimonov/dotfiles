@@ -1,0 +1,6 @@
+[core]
+  excludesfile = ~/.gitignore-global
+
+[user]
+  name = Maxim Filimonov
+  email = tpaktopsp@gmail.com
