@@ -1,23 +1,28 @@
 set nocompatible                  " Must come first because it changes other options.
 
-"Vundle required options
+" ===========================================================
+"Options to enable VUNDLE
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
+filetype plugin indent on     " required!
 " let Vundle manage Vundle
 "  " required! 
 Bundle 'gmarik/vundle'
 
-" BUNDLES:
+" ===========================================================
+" BUNDLES for VUNDLE:
 Bundle 'The-NERD-tree'
 Bundle 'tpope/vim-surround'
 Bundle 'taglist.vim'
 Bundle 'camelcasemotion'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-haml.git'
+Bundle 'tpope/vim-endwise.git'
 
+" ===========================================================
+" CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.
 
 " Add recently accessed projects menu (project plugin)

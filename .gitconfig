@@ -1,6 +1,7 @@
 [core]
   excludesfile = ~/.gitignore-global
-
+[init]
+  templatedir = ~/.gitfiles/templates/
 [user]
   name = Maxim Filimonov
   email = tpaktopsp@gmail.com
