@@ -1,7 +1,23 @@
 set nocompatible                  " Must come first because it changes other options.
 
-filetype on  " Automatically detect file types.
-filetype plugin indent on         " Turn on file type detection.
+"Vundle required options
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+"  " required! 
+Bundle 'gmarik/vundle'
+
+" BUNDLES:
+Bundle 'The-NERD-tree'
+Bundle 'tpope/vim-surround'
+Bundle 'taglist.vim'
+Bundle 'camelcasemotion'
+Bundle 'tpope/vim-rails.git'
+Bundle 'tpope/vim-haml.git'
+
 syntax enable                     " Turn on syntax highlighting.
 
 " Add recently accessed projects menu (project plugin)
@@ -48,11 +64,11 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
- 
+
 " alt+n or alt+p to navigate between entries in QuickFix
 map <silent> <m-p> :cp <cr>
 map <silent> <m-n> :cn <cr>
- 
+
 " Change which file opens after executing :Rails command
 let g:rails_default_file='config/database.yml'
 
@@ -76,20 +92,20 @@ if has("autocmd")
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
-  au!
+    au!
 
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
+    " For all text files set 'textwidth' to 78 characters.
+    autocmd FileType text setlocal textwidth=78
 
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it when the position is invalid or when inside an event handler
-  " (happens when dropping a file on gvim).
-  " Also don't do it when the mark is in the first line, that is the default
-  " position when opening a file.
-  autocmd BufReadPost *
-    \ if line("'\"") > 1 && line("'\"") <= line("$") |
-    \   exe "normal! g`\"" |
-    \ endif
+    " When editing a file, always jump to the last known cursor position.
+    " Don't do it when the position is invalid or when inside an event handler
+    " (happens when dropping a file on gvim).
+    " Also don't do it when the mark is in the first line, that is the default
+    " position when opening a file.
+    autocmd BufReadPost *
+          \ if line("'\"") > 1 && line("'\"") <= line("$") |
+          \   exe "normal! g`\"" |
+          \ endif
 
   augroup END
 
@@ -104,7 +120,7 @@ endif " has("autocmd")
 " Only define it when not defined already.
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+        \ | wincmd p | diffthis
 endif
 " Turn off search highlight by CTRL-L after search finished
 noremap <silent> <c-l> :nohls<cr><c-l>
