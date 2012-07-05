@@ -22,7 +22,8 @@ Bundle 'tpope/vim-haml.git'
 Bundle 'tpope/vim-endwise.git'
 Bundle 'Textile-for-VIM'
 Bundle 'rodjek/vim-puppet'
-
+Bundle 'L9'
+Bundle 'FuzzyFinder'
 " ===========================================================
 " CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.
