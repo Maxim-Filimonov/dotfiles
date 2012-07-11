@@ -3,7 +3,7 @@
 	"installed_packages":
 	[
 		"Package Control",
-		"SublimeBlockCursor",
-		"Theme - Soda"
+		"Theme - Soda",
+		"VintageEx"
 	]
 }

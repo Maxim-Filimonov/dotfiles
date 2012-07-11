@@ -1,8 +1,10 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Cobalt.tmTheme",
-	// List any packages to ignore here. When removing entries from this list,
-    // a restart may be required if the package contains plugins.
-    "ignored_packages": [""],
-    "theme": "Soda Light.sublime-theme"
-
+	"ignored_packages":
+	[
+		""
+	],
+	"theme": "Soda Dark.sublime-theme",
+	// The number of spaces a tab is considered equal to
+  "tab_size": 2
 }
