@@ -20,10 +20,10 @@ Bundle 'camelcasemotion'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-haml.git'
 Bundle 'tpope/vim-endwise.git'
+Bundle 'tpope/vim-markdown.git'
 Bundle 'Textile-for-VIM'
 Bundle 'rodjek/vim-puppet'
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+Bundle 'ctrlp.vim'
 " ===========================================================
 " CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.

@@ -192,6 +192,8 @@
 alias g='vim --remote-silent'
 # Use tmux in 256 colors mode everytime
 alias tmux="tmux -2"
+# Alias for mongo db start
+alias mongos="mongod run --config /usr/local/etc/mongod.conf"
 # Make VIM default editor
 export EDITOR='vim'
 
