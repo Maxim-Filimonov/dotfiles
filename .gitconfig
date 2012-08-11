@@ -9,6 +9,7 @@
   branch = auto
   diff = auto
   status = auto
+  ui = true
 [color "branch"]
   current = yellow reverse
   local = yellow
@@ -22,3 +23,15 @@
   added = yellow
   changed = green
   untracked = cyan
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[alias]
+  d = difftool
+	pb = pull --rebase
+[merge]
+  tool = vimdiff
+[mergetool "threesome"]
+  cmd = "vim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
+  trustExitCode = true
