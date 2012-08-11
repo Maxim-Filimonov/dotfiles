@@ -1,7 +1,8 @@
 {
-	"auto_upgrade_last_run": 1341467809,
+	"auto_upgrade_last_run": 1344576577,
 	"installed_packages":
 	[
+		"BeautifyRuby",
 		"Package Control",
 		"Theme - Soda",
 		"VintageEx"
