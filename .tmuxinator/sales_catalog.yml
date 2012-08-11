@@ -1,0 +1,16 @@
+# ~/.tmuxinator/rails.yml
+# you can make as many tabs as you wish...
+
+project_root: ~/repos/parents_site/sales_catalog/
+project_name: sales_catalog
+tabs:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - vim
+        - #empty, will just run plain bash
+  - shell: git pull --rebase
+  - database: rails db
+  - server: rails s
+  - logs: tail -f logs/development.log
+  - console: pry -r ./config/enviroment 

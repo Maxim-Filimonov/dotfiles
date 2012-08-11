@@ -1,0 +1,16 @@
+# ~/.tmuxinator/rails_mongo.yml
+# you can make as many tabs as you wish...
+
+project_root: ~/repos/tw/splitit-core/
+project_name: splitit
+tabs:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - vim
+        - #empty, will just run plain bash
+  - shell: git pull --rebase
+  - database: mongos 
+  - server: rails s
+  - logs: tail -f logs/development.log
+  - console: bundle exec pry -r ./config/enviroment 
