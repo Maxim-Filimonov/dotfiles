@@ -29,10 +29,29 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails ruby vim)
+plugins=(git rails ruby vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# Use vim to open a lot of files by mask
+alias rv='vim --remote-silent'
+# Use tmux in 256 colors mode everytime
+alias tmux="tmux -2"
+# Alias for mongo db start
+alias mongos="mongod run --config /usr/local/etc/mongod.conf"
+# Make VIM default editor
+export EDITOR='vim'
 # Customize to your needs...
 export PATH=/Users/mfilimon/.rvm/gems/ruby-1.9.3-p194/bin:/Users/mfilimon/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/mfilimon/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/mfilimon/.rvm/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/mfilimon/bin
+# Stop autocorrection
+unsetopt correct_all
+# Turn off globbing for rake
+alias rake='noglob rake'
+alias git='noglob git'
+# TMUXINATOR
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+# Bind JJ to switch to normal mode
+bindkey -M viins 'jj' vi-cmd-mode
+# Alisa be to bundle exec
+alias be='bundle exec'
