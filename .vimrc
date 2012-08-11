@@ -24,6 +24,9 @@ Bundle 'tpope/vim-markdown.git'
 Bundle 'Textile-for-VIM'
 Bundle 'rodjek/vim-puppet'
 Bundle 'ctrlp.vim'
+Bundle 'vim-coffee-script'
+Bundle 'sjl/threesome.vim.git'
+Bundle 'ack.vim'
 " ===========================================================
 " CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.
@@ -85,7 +88,7 @@ let g:rails_default_file='config/database.yml'
 " Visual
 set showmatch " Show matching brackets
 set mat=5 " Bracket blinking
-set list 
+set list " Set display of $ at the end of the line
 set viminfo='20,<1000,s10,h
 
 " File type based indenting
@@ -132,3 +135,8 @@ if !exists(":DiffOrig")
 endif
 " Turn off search highlight by CTRL-L after search finished
 noremap <silent> <c-l> :nohls<cr><c-l>
+" Remap jj to escape
+ino jj <esc>
+cno jj <c-c>
+" For visual mode v
+vno v <esc>
