@@ -6,7 +6,6 @@ filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-filetype plugin indent on     " required!
 " let Vundle manage Vundle
 "  " required! 
 Bundle 'gmarik/vundle'
@@ -27,10 +26,13 @@ Bundle 'ctrlp.vim'
 Bundle 'vim-coffee-script'
 Bundle 'sjl/threesome.vim.git'
 Bundle 'ack.vim'
+Bundle 'bbommarito/vim-slim'
+Bundle 'Rename'
 " ===========================================================
 " CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.
 
+filetype plugin indent on     " required!
 " Add recently accessed projects menu (project plugin)
 set viminfo^=!
 
@@ -94,12 +96,6 @@ set viminfo='20,<1000,s10,h
 " File type based indenting
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
-
-  " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on in C files, etc.
-  " Also load indent files, to automatically do language-dependent indenting.
-  filetype plugin indent on
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
