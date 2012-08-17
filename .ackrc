@@ -1,0 +1,7 @@
+# Always use color
+--color
+# Add rails 3 specific file types
+--type-set=sass=.scss,.sass
+--type-set=slim=.slim
+--type-set=haml=.haml
+
