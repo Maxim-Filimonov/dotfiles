@@ -24,9 +24,9 @@
   changed = green
   untracked = cyan
 [diff]
-  tool = vimdiff
-[difftool]
-  prompt = false
+  tool = araxis
+[merge]
+  tool = araxis
 [alias]
   d = difftool
 	pb = pull --rebase
