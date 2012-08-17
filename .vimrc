@@ -28,6 +28,9 @@ Bundle 'sjl/threesome.vim.git'
 Bundle 'ack.vim'
 Bundle 'bbommarito/vim-slim'
 Bundle 'Rename'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'ruby-matchit'
+Bundle 'jgdavey/vim-railscasts'
 " ===========================================================
 " CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.
@@ -39,7 +42,7 @@ set viminfo^=!
 " Sets pallete to 256 colors
 set t_Co=256
 " Set default color scheme 
-colo vividchalk
+colo railscasts
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
 set backupdir=.,./.backup,/tmp
@@ -136,3 +139,8 @@ ino jj <esc>
 cno jj <c-c>
 " For visual mode v
 vno v <esc>
+" Map window movement to Ctrl
+noremap <c-j> <c-w>j
+noremap <c-l> <c-w>l
+noremap <c-k> <c-w>k
+noremap <c-h> <c-w>h
