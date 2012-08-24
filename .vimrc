@@ -31,6 +31,7 @@ Bundle 'Rename'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'ruby-matchit'
 Bundle 'jgdavey/vim-railscasts'
+Bundle 'tpope/vim-fugitive'
 " ===========================================================
 " CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.
@@ -132,8 +133,6 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
         \ | wincmd p | diffthis
 endif
-" Turn off search highlight by CTRL-L after search finished
-noremap <silent> <c-l> :nohls<cr><c-l>
 " Remap jj to escape
 ino jj <esc>
 cno jj <c-c>
@@ -144,3 +143,7 @@ noremap <c-j> <c-w>j
 noremap <c-l> <c-w>l
 noremap <c-k> <c-w>k
 noremap <c-h> <c-w>h
+" Use comma as leader
+let mapleader = ","
+" Turn off search highlight by leader-L after search finished
+noremap <silent> <Leader>l :nohl<CR>
