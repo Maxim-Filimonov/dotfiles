@@ -13,4 +13,5 @@ tabs:
   - database: mongos 
   - server: rails s
   - logs: tail -f logs/development.log
-  - console: bundle exec pry -r ./config/enviroment 
+  - console: bundle exec rails c
+  - guard: bundle exec guard
