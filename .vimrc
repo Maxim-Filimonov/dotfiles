@@ -147,3 +147,8 @@ noremap <c-h> <c-w>h
 let mapleader = ","
 " Turn off search highlight by leader-L after search finished
 noremap <silent> <Leader>l :nohl<CR>
+" Map copy/paste commands to F1,F2
+nmap <F1> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+imap <F1> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+nmap <F2> :.w !pbcopy<CR><CR>
+vmap <F2> :w !pbcopy<CR><CR>
