@@ -152,3 +152,8 @@ nmap <F1> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 imap <F1> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 nmap <F2> :.w !pbcopy<CR><CR>
 vmap <F2> :w !pbcopy<CR><CR>
+" Leader space to find buffer
+nmap <leader><space> :CtrlPBuffer<CR>
+" When opening a file with <cr> or <c-t>, if the file’s already opened somewhere
+" CtrlP will try to jump to it instead of opening a new instance: >
+let g:ctrlp_switch_buffer = 2
