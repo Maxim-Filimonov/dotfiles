@@ -33,7 +33,6 @@ plugins=(git rails ruby vi-mode osx)
 
 source $ZSH/oh-my-zsh.sh
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 # Use vim to open a lot of files by mask
 alias rv='vim --remote-silent'
 # Use tmux in 256 colors mode everytime
@@ -43,7 +42,7 @@ alias mongos="mongod run --config /usr/local/etc/mongod.conf"
 # Make VIM default editor
 export EDITOR='vim'
 # Customize to your needs...
-export PATH=/Users/mfilimon/.rvm/gems/ruby-1.9.3-p194/bin:/Users/mfilimon/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/mfilimon/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/mfilimon/.rvm/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/mfilimon/bin
+export PATH=/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/mfilimon/bin
 # Stop autocorrection
 unsetopt correct_all
 # Turn off globbing for rake
@@ -55,3 +54,5 @@ alias git='noglob git'
 bindkey -M viins 'jj' vi-cmd-mode
 # Alisa be to bundle exec
 alias be='bundle exec'
+# load RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
