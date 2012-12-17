@@ -157,3 +157,6 @@ nmap <leader><space> :CtrlPBuffer<CR>
 " When opening a file with <cr> or <c-t>, if the file’s already opened somewhere
 " CtrlP will try to jump to it instead of opening a new instance: >
 let g:ctrlp_switch_buffer = 2
+" Use case insensitive search, except when using capital letters
+set ignorecase
+set smartcase
