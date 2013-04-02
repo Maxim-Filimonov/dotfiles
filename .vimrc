@@ -26,12 +26,14 @@ Bundle 'ctrlp.vim'
 Bundle 'vim-coffee-script'
 Bundle 'sjl/threesome.vim.git'
 Bundle 'ack.vim'
-Bundle 'bbommarito/vim-slim'
+Bundle 'jpalardy/vim-slime'
 Bundle 'Rename'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'ruby-matchit'
 Bundle 'jgdavey/vim-railscasts'
 Bundle 'tpope/vim-fugitive'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'mattn/zencoding-vim'
 " ===========================================================
 " CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.
