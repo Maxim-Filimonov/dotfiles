@@ -30,6 +30,9 @@ Bundle 'tsaleh/vim-matchit'
 Bundle 'ruby-matchit'
 Bundle 'jgdavey/vim-railscasts'
 Bundle 'tpope/vim-fugitive'
+Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'danchoi/ri.vim'
 " ===========================================================
 " CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.
@@ -41,7 +44,7 @@ set viminfo^=!
 " Sets pallete to 256 colors
 set t_Co=256
 " Set default color scheme 
-colo railscasts
+colo Tomorrow-Night
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
 set backupdir=.,./.backup,/tmp
