@@ -42,7 +42,7 @@ alias mongos="mongod run --config /usr/local/etc/mongod.conf"
 # Make VIM default editor
 export EDITOR='vim'
 # Customize to your needs...
-export PATH=/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/mfilimon/bin
+export PATH=/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 # Stop autocorrection
 unsetopt correct_all
 # Turn off globbing for rake
