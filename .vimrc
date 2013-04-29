@@ -23,7 +23,6 @@ Bundle 'tpope/vim-markdown.git'
 Bundle 'rodjek/vim-puppet'
 Bundle 'ctrlp.vim'
 Bundle 'vim-coffee-script'
-Bundle 'ack.vim'
 Bundle 'bbommarito/vim-slim'
 Bundle 'Rename'
 Bundle 'tsaleh/vim-matchit'
@@ -33,6 +32,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'danchoi/ri.vim'
+" Bundle 'ack.vim' -- replaced with ag
+Bundle 'ag.vim'
 " ===========================================================
 " CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.
