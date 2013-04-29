@@ -34,6 +34,7 @@ Bundle 'jgdavey/vim-railscasts'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'mattn/zencoding-vim'
+Bundle 'Lokaltog/powerline'
 " ===========================================================
 " CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.
@@ -162,3 +163,5 @@ let g:ctrlp_switch_buffer = 2
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
+" powerline installation
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
