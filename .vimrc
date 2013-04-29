@@ -32,6 +32,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'danchoi/ri.vim'
+Bundle 'Conque-Shell'
+Bundle 'skwp/vim-ruby-conque'
 " Bundle 'ack.vim' -- replaced with ag
 Bundle 'ag.vim'
 " ===========================================================
