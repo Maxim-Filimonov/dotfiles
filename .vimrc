@@ -20,7 +20,6 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-haml.git'
 Bundle 'tpope/vim-endwise.git'
 Bundle 'tpope/vim-markdown.git'
-Bundle 'Textile-for-VIM'
 Bundle 'rodjek/vim-puppet'
 Bundle 'ctrlp.vim'
 Bundle 'vim-coffee-script'
@@ -30,12 +29,14 @@ Bundle 'jpalardy/vim-slime'
 Bundle 'Rename'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'ruby-matchit'
-Bundle 'jgdavey/vim-railscasts'
 Bundle 'tpope/vim-fugitive'
+Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'Valloric/YouCompleteMe'
-Bundle 'mattn/zencoding-vim'
-Bundle 'Lokaltog/powerline'
-" ===========================================================
+Bundle 'danchoi/ri.vim'
+Bundle 'Conque-Shell'
+Bundle 'skwp/vim-ruby-conque'
+" Bundle 'ack.vim' -- replaced with ag
+Bundle 'ag.vim'
 " CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.
 
@@ -46,7 +47,7 @@ set viminfo^=!
 " Sets pallete to 256 colors
 set t_Co=256
 " Set default color scheme 
-colo railscasts
+colo Tomorrow-Night
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
 set backupdir=.,./.backup,/tmp
@@ -165,3 +166,20 @@ set ignorecase
 set smartcase
 " powerline installation
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+" Search Dash for word under cursor
+function! SearchDash()
+  let s:browser = "/usr/bin/open"
+  let s:wordUnderCursor = expand("<cword>")
+  let s:url = "dash://".s:wordUnderCursor
+  let s:cmd ="silent ! " . s:browser . " " . s:url
+  execute s:cmd
+  redraw!
+endfunction
+map <leader>s :call SearchDash()<CR>
+" Vim Conque
+" Cmd-Shift-R for RSpec
+nmap <silent> <D-R> :call RunRspecCurrentFileConque()<CR>
+" Cmd-Shift-L for RSpec Current Line
+nmap <silent> <D-L> :call RunRspecCurrentLineConque()<CR>
+" ,Cmd-R for Last conque command
+nmap <silent> ,<D-R> :call RunLastConqueCommand()<CR>

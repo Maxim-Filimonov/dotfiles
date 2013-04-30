@@ -1,5 +1,6 @@
 [core]
   excludesfile = ~/.gitignore-global
+	autocrlf = input
 [init]
   templatedir = ~/.gitfiles/templates/
 [user]
