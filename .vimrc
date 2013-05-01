@@ -32,10 +32,11 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'danchoi/ri.vim'
-Bundle 'Conque-Shell'
+Bundle 'rson/vim-conque'
 Bundle 'skwp/vim-ruby-conque'
 " Bundle 'ack.vim' -- replaced with ag
 Bundle 'ag.vim'
+Bundle 'mattn/gist-vim'
 " ===========================================================
 " CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.
@@ -176,9 +177,13 @@ function! SearchDash()
 endfunction
 map <leader>s :call SearchDash()<CR>
 " Vim Conque
-" Cmd-Shift-R for RSpec
-nmap <silent> <D-R> :call RunRspecCurrentFileConque()<CR>
-" Cmd-Shift-L for RSpec Current Line
-nmap <silent> <D-L> :call RunRspecCurrentLineConque()<CR>
-" ,Cmd-R for Last conque command
-nmap <silent> ,<D-R> :call RunLastConqueCommand()<CR>
+nmap <silent> <Leader>rcrr :call RunRubyCurrentFileConque()<CR>
+nmap <silent> <Leader>rcss :call RunRspecCurrentFileConque()<CR>
+nmap <silent> <Leader>rcll :call RunRspecCurrentLineConque()<CR>
+nmap <silent> <Leader>rccc :call RunCucumberCurrentFileConque()<CR>
+nmap <silent> <Leader>rccl :call RunCucumberCurrentLineConque()<CR>
+nmap <silent> <Leader>rcRR :call RunRakeConque()<CR>
+nmap <silent> <Leader>rcrl :call RunLastConqueCommand()<CR>
+
+nmap <silent> <C-s> :call RelatedSpecVOpen()<CR>
+nmap <silent> ,<C-s> :call RelatedSpecOpen()<CR>
