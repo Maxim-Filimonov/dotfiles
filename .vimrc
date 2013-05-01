@@ -23,11 +23,12 @@ Bundle 'tpope/vim-markdown.git'
 Bundle 'rodjek/vim-puppet'
 Bundle 'ctrlp.vim'
 Bundle 'vim-coffee-script'
-Bundle 'bbommarito/vim-slim'
+Bundle 'sjl/threesome.vim.git'
+Bundle 'ack.vim'
+Bundle 'jpalardy/vim-slime'
 Bundle 'Rename'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'ruby-matchit'
-Bundle 'jgdavey/vim-railscasts'
 Bundle 'tpope/vim-fugitive'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'Valloric/YouCompleteMe'
@@ -165,7 +166,8 @@ let g:ctrlp_switch_buffer = 2
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
-
+" powerline installation
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 " Search Dash for word under cursor
 function! SearchDash()
   let s:browser = "/usr/bin/open"
