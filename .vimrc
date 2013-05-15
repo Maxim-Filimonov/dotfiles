@@ -33,12 +33,15 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'ag.vim'
 Bundle 'mattn/gist-vim'
-Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'othree/html5.vim'
 Bundle 'ervandew/screen'
 Bundle 'slim-template/vim-slim'
+Bundle 'sjl/splice.vim'
+Bundle 'tpope/vim-rvm'
+Bundle 'ecomba/vim-ruby-refactoring'
 " ===========================================================
 " CONFIGURATION:
+
 syntax enable                     " Turn on syntax highlighting.
 
 filetype plugin indent on     " required!
@@ -177,9 +180,25 @@ function! SearchDash()
   redraw!
 endfunction
 map <leader>s :call SearchDash()<CR>
+"
 " Screen shortcuts
 command -nargs=? -complete=shellcmd W  :w | :call ScreenShellSend("load '".@%."';")
 map <Leader>c :ScreenShellVertical bundle exec rails c<CR>
 map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
 map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
 map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
+" Vim Conque
+nmap <silent> <Leader>rcrr :call RunRubyCurrentFileConque()<CR>
+nmap <silent> <Leader>rcss :call RunRspecCurrentFileConque()<CR>
+nmap <silent> <Leader>rcll :call RunRspecCurrentLineConque()<CR>
+nmap <silent> <Leader>rccc :call RunCucumberCurrentFileConque()<CR>
+nmap <silent> <Leader>rccl :call RunCucumberCurrentLineConque()<CR>
+nmap <silent> <Leader>rcRR :call RunRakeConque()<CR>
+nmap <silent> <Leader>rcrl :call RunLastConqueCommand()<CR>
+
+nmap <silent> <C-s> :call RelatedSpecVOpen()<CR>
+nmap <silent> ,<C-s> :call RelatedSpecOpen()<CR>
+" Highlight current line when in insert mode
+autocmd InsertEnter,InsertLeave * set cul!
+" Add gems.tags to vim ctags 
+set tags+=gems.tags

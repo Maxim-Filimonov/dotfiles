@@ -56,3 +56,6 @@ bindkey -M viins 'jj' vi-cmd-mode
 alias be='bundle exec'
 # load RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
