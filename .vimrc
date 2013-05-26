@@ -38,6 +38,7 @@ Bundle 'skwp/vim-ruby-conque'
 " Bundle 'ack.vim' -- replaced with ag
 Bundle 'ag.vim'
 Bundle 'mattn/gist-vim'
+Bundle 'ecomba/vim-ruby-refactoring'
 " ===========================================================
 " CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.
