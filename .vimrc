@@ -39,6 +39,7 @@ Bundle 'skwp/vim-ruby-conque'
 Bundle 'ag.vim'
 Bundle 'mattn/gist-vim'
 Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'othree/html5.vim'
 " ===========================================================
 " CONFIGURATION:
 syntax enable                     " Turn on syntax highlighting.
