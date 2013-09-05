@@ -29,7 +29,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails ruby vi-mode osx)
+plugins=(git gitfast rails ruby vi-mode osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -59,3 +59,5 @@ alias be='bundle exec'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+# Use hub
+alias git=hub

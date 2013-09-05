@@ -39,6 +39,8 @@ Bundle 'slim-template/vim-slim'
 Bundle 'sjl/splice.vim'
 Bundle 'tpope/vim-rvm'
 Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'godlygeek/tabular'
+Bundle 'slim-template/vim-slim'
 " ===========================================================
 " CONFIGURATION:
 
@@ -202,3 +204,5 @@ nmap <silent> ,<C-s> :call RelatedSpecOpen()<CR>
 autocmd InsertEnter,InsertLeave * set cul!
 " Add gems.tags to vim ctags 
 set tags+=gems.tags
+" Save file on focus lost
+:au FocusLost * :wa
