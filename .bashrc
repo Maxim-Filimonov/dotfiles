@@ -34,5 +34,5 @@ export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$(par
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 source ~/.nvm/nvm.sh
-
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator # TMUXINATOR 
+export GOPATH="$HOME/gocode"

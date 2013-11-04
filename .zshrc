@@ -29,10 +29,16 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
+<<<<<<< HEAD
 plugins=(git gitfast rails ruby vi-mode osx)
+=======
+plugins=(git rails ruby vi-mode osx gitflow)
+>>>>>>> Add gopath
 
 source $ZSH/oh-my-zsh.sh
 
+# Use vim from macvim
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 # Use vim to open a lot of files by mask
 alias rv='vim --remote-silent'
 # Use tmux in 256 colors mode everytime
@@ -42,7 +48,7 @@ alias mongos="mongod run --config /usr/local/etc/mongod.conf"
 # Make VIM default editor
 export EDITOR='vim'
 # Customize to your needs...
-export PATH=/Library/Frameworks/Python.framework/Versions/Current/bin:~/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/bin/eb/macosx/python2.7/
+export PATH=/Library/Frameworks/Python.framework/Versions/Current/bin:~/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/bin/eb/macosx/python2.7/:$GOPATH/bin
 # Stop autocorrection
 unsetopt correct_all
 # Turn off globbing for rake
@@ -56,8 +62,8 @@ bindkey -M viins 'jj' vi-cmd-mode
 alias be='bundle exec'
 # load RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 # Use hub
 alias git=hub
+export GOPATH="$HOME/gocode"
