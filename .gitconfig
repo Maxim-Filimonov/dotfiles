@@ -37,4 +37,6 @@
   cmd = "vim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
   trustExitCode = true
 [github]
-	user = Maxim-Filimonov
+  user = Maxim-Filimonov
+[push]
+  default = simple
