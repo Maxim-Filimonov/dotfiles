@@ -64,3 +64,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Use hub
 alias git=hub
 export GOPATH="$HOME/gocode"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
