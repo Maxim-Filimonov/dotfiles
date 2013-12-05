@@ -41,6 +41,8 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'Blackrush/vim-gocode'
 Bundle 'Townk/vim-autoclose'
 Bundle 'benmills/vimux'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'kana/vim-textobj-user'
 " ===========================================================
 " CONFIGURATION:
 
