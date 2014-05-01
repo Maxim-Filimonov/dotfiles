@@ -43,6 +43,8 @@ Bundle 'Townk/vim-autoclose'
 Bundle 'benmills/vimux'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'kana/vim-textobj-user'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'Floobits/floobits-vim'
 " ===========================================================
 " CONFIGURATION:
 
@@ -208,3 +210,8 @@ autocmd InsertEnter,InsertLeave * set cul!
 set tags+=gems.tags
 " Save file on focus lost
 :au FocusLost * :wa
+" Golang autocommands
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+autocmd FileType go compiler go
+" Prevent conflicts between Floobits and YCM
+let g:ycm_allow_changing_updatetime = 0
