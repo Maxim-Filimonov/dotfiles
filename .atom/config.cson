@@ -1,0 +1,55 @@
+"*":
+  "exception-reporting":
+    userId: "aa88145a-5ebf-bd11-9ba3-53b8886f3c46"
+  "release-notes":
+    viewedVersion: "0.92.0"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "8046caa30b2ff7218fa3a41d3c70d9ae13687c4d"
+  editor:
+    showIndentGuide: true
+    invisibles: {}
+  core:
+    ignoredNames: [
+      "log"
+      "dist"
+    ]
+    disabledPackages: [
+      "go-plus"
+      "term2"
+      "filetype-color"
+    ]
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "autocomplete-plus":
+    confirmCompletion: "tab and enter"
+    includeCompletionsFromAllBuffers: true
+  "gist-it":
+    userToken: "9b0b9668a55f817e90af5e082e23a4e289a8efe2"
+  preview:
+    _analyticsUserId: "02afae44-6722-427b-9469-169da711a3f3"
+  linter:
+    showErrorInline: true
+  term2:
+    shellArguments: "--login"
+  "ruby-test":
+    rspecFileCommand: "bin/rspec --tty {relative_path}"
+    rspecSingleCommand: "bin/rspec --tty {relative_path}:{line_number}"
+    shell: "zsh"
+  "linter-jshint": {}
+  "filetype-color":
+    enabled: "false"
+  "linter-coffeelint": {}
+  "linter-htmlhint": {}
+  "file-types":
+    html: "text.html.spacebars"
+    js: "source.js"
+  "meteor-helper": {}
+  "vim-mode": {}
+  "you-complete-me": {}
+  react: {}
