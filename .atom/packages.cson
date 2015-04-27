@@ -1,4 +1,5 @@
 'packages': [
+  'language-cjsx'
   'parcel'
   'atom-dark-syntax'
   'atom-dark-ui'
