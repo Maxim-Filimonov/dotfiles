@@ -1,16 +1,22 @@
-# Path to your oh-my-fish.
-set fish_path $HOME/.oh-my-fish
+function fish_title
+  pwd
+end
+
+# Paths to your tackle
+set tacklebox_path ~/.tackle ~/.tacklebox
 
 # Theme
-set fish_theme robbyrussell
+set tacklebox_theme entropy
 
-# All built-in plugins can be found at ~/.oh-my-fish/plugins/
-# Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
-# Enable plugins by adding their name separated by a space to the line below.
-set fish_plugins theme export docker-compose
+# Which modules would you like to load? (modules can be found in ~/.tackle/modules/*)
+# Custom modules may be added to ~/.tacklebox/modules/
+# Example format: set tacklebox_modules virtualfish virtualhooks
+set tacklebox_modules virtualfish virtualhooks
 
-# Path to your custom folder (default path is ~/.oh-my-fish/custom)
-#set fish_custom $HOME/dotfiles/oh-my-fish
+# Which plugins would you like to enable? (plugins can be found in ~/.tackle/plugins/*)
+# Custom plugins may be added to ~/.tacklebox/plugins/
+# Example format: set tacklebox_plugins python extract
+set tacklebox_plugins extract docker up
 
-# Load oh-my-fish configuration.
-. $fish_path/oh-my-fish.fish
+# Load Tacklebox configuration
+. ~/.tacklebox/tacklebox.fish
