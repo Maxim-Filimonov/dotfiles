@@ -1,6 +1,13 @@
 'packages': [
+  'autocomplete-plus'
+  'floobits'
+  'floobits-atom'
   'language-cjsx'
+  'language-haml'
+  'minimap'
   'parcel'
+  'project-manager'
+  'vim-mode'
   'atom-dark-syntax'
   'atom-dark-ui'
   'atom-light-syntax'
