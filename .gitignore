@@ -4,3 +4,4 @@ bundle
 fish_history
 fishd*
 .atom/storage
+.atom/config.cson
